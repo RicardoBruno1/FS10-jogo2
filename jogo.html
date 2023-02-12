@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Jogo em JS</title>
     <link rel="stylesheet" href="jogo.css">
 </head>
 <body>
@@ -24,7 +24,7 @@
         let count = 0;
         
         let paredeAndando = setInterval(function(){
-            if((parede.offsetLeft <= 50 && parede.offsetLeft < 20) && boneco.offsetTop > 190){
+            if((parede.offsetLeft <= 100 && parede.offsetLeft < 100) && boneco.offsetTop > 190){
                 clearInterval(paredeAndando);
                 parede.style.left = parede.offsetLeft+"px";
                 parede.classList.remove("andando");

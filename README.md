@@ -1,1 +1,1 @@
-# FS10-jogo2
+Jogo de corrida criado em HTML, CSS e JS no curso de fullstack.

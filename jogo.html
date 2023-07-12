@@ -56,15 +56,21 @@
         });
 
         //Ao clicar na tela o boneco pula
+        let estaPulando = false;
         window.addEventListener("click", function(){
-            boneco.classList.add("pulando");
+            if(comecar.style.display === "none" && !estaPulando){
+                estaPulando = true;
+                boneco.classList.add("pulando");
+            
             //Apos um tempo o pulo é removido
             setTimeout(function(){
                 count = count + 100;
                 pontos.innerHTML = "";
                 pontos.innerHTML = count;
                 boneco.classList.remove("pulando");
+                estaPulando = false;
             }, 500);
+        }
         });
     </script>
 </body>

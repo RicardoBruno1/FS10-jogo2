@@ -5,6 +5,7 @@ body{
     align-items: center;
     background-color: #A60F0F;
     background-image: url("https://onedesblog.com/wp-content/uploads/2021/05/SF_Logo.png");
+    overflow: hidden;
 }
 #tela{
     width: 500px;
